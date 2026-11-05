@@ -1,0 +1,22 @@
+tensorflow
+pandas
+dvc
+notebook
+numpy
+matplotlib
+seaborn
+python-box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+scipy
+Flask
+Flask-Cors
+-e .
+#اخر سطر شو فايدته هي فايدته 
+#برتبط ب ملف setup 
+#شو بعمل بقوم ب تحويل مجلد الكود تبعي ل مكتبة بايثون محليه مثبته داخل بيئتي 
+#هيك بقدر استدعي ملفات مشروعي من اي مكان وكانها مكتبة رسميه مثل بانداس مثلا 
+#from cnnClassifier.components import data_ingestion 

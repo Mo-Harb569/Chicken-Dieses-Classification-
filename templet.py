@@ -60,6 +60,7 @@ list_of_files = [
     "requirements.txt",
     "setup.py", 
     "research/trials.ipynb",
+    "templet/index.html",
 ]
 
 for filepath in list_of_files:
@@ -68,8 +69,10 @@ for filepath in list_of_files:
     # اسم المجلد ثم اسم الملف 
     filedir, filename = os.path.split(filepath) 
 
+    #هون تاكد انه مسار الملف فعلا موجود اذا عمله ع القرص الصلب 
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
+
         logging.info(f"Creating directory; {filedir} for the file: {filename}")
 
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
@@ -78,3 +81,4 @@ for filepath in list_of_files:
             logging.info(f"Creating empty file: {filepath}")
     else:
         logging.info(f"{filename} is already exists")
+
