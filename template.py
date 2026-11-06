@@ -2,7 +2,8 @@ import os
 from pathlib import Path
 # عشان اتعامل مع مسارات الملفات بطريقه امنه ومتوافقه مع كل انظمة التشغيل 
 # إعداد نظام التسجيل (Logging Configuration): 
-import logging  
+import logging
+  
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:') 
 # هون رح يطبع الوقت ب جانب رسالة الحددث الي عندي 
@@ -64,6 +65,8 @@ list_of_files = [
 ]
 
 for filepath in list_of_files:
+
+    #بس لحل مشكله الباثات بين الانظمه 
     filepath = Path(filepath)
     # بفصل المسار ل جزئين 
     # اسم المجلد ثم اسم الملف 
